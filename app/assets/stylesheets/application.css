@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+.app {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
