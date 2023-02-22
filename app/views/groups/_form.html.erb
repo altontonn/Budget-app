@@ -1,0 +1,14 @@
+<%= form_with(model: group, html: { class: "" }) do |form| %>
+<%= render "formErr/error_form_message", resource: group %>
+<div class="field">
+   <%= form.label "Name", style: "display: block" %>
+   <%= form.text_field :name, required: true %>
+</div>
+
+<div class="field">
+   <%= form.label "Icon", style: "display: block" %>
+   <%= form.text_field :icon, required: true %>
+</div>
+
+<%= form.submit "Create Category", class: "button"%>
+<% end %>
