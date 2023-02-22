@@ -1,0 +1,20 @@
+<h1>Categories</h1>
+<section class="section-1">
+  <% if @groups.count > 0 %>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Icon</th>
+      </tr>
+      <% @groups.each do |group| %>
+      <tr>
+        <td><%= group.name%></td>
+        <td><%= group.icon%></td>
+      </tr>
+      <% end %>
+    </table>
+    <% else %>
+    <h2>No category</h2>
+  <% end %>
+  <button class="btn-link"><%= link_to "Add Category", new_group_path%></button>
+</section>
