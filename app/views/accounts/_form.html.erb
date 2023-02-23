@@ -1,0 +1,14 @@
+<%= form_with(model: account, html: { class: "" }) do |form| %>
+<%= render "formErr/error_form_message", resource: account %>
+<div class="field">
+   <%= form.label "Name", style: "display: block" %>
+   <%= form.text_field :name, required: true %>
+</div>
+
+<div class="field">
+   <%= form.label "Amount", style: "display: block" %>
+   <%= form.text_field :amount, required: true %>
+</div>
+
+<%= form.submit "Create Transaction", class: "button"%>
+<% end %>

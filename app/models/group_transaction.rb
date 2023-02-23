@@ -1,0 +1,2 @@
+class GroupTransaction < ApplicationRecord
+end
