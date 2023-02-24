@@ -1,20 +1,27 @@
 <h1>Accounts</h1>
+ <%= link_to '< Back', groups_path %>
 <section class="section-1">
   <% if @accounts.count > 0 %>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>Amount</th>
-      </tr>
+    <table class="table table-bordered">
+      <thead class="table-light">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Amount</th>
+        </tr>
+      </thead>
       <% @accounts.each do |account| %>
-      <tr>
-        <td><%= account.name%></td>
-        <td><%= account.amount%></td>
-      </tr>
+      <tbody>
+        <tr>
+          <th scope="row"><%= account.id %></th>
+          <td><%= account.name%></td>
+          <td><%= account.amount%></td>
+        </tr>
+      </tbody>
       <% end %>
     </table>
     <% else %>
     <h2>No ammount</h2>
   <% end %>
-  <button class="btn-link"><%= link_to "Add Transaction", new_group_account_path %></button>
+  <button class="btnLink"><%= link_to "Add Transaction", new_group_account_path %></button>
 </section>

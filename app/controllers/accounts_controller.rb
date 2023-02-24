@@ -9,9 +9,9 @@ class AccountsController < ApplicationController
 
   def create
     @account = Account.new(account_params)
-    @account.user = current_user
+    @account.user_id = current_user.id
     if @account.save
-      redirect_to group_account_path(@account), notice: 'Transaction created successfully'
+      redirect_to group_accounts_path(@account), notice: 'Transaction created successfully'
     else
       render :new, status: :unprocessable_entity
     end
