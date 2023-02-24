@@ -1,20 +1,28 @@
 <h1>Categories</h1>
 <section class="section-1">
   <% if @groups.count > 0 %>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>Icon</th>
-      </tr>
+    <table class="table table-bordered">
+      <thead class="table-light">
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col" class="col-three">Icon</th>
+        </tr>
+      </thead>
       <% @groups.each do |group| %>
-      <tr>
-        <td><%= group.name%></td>
-        <td><%= group.icon%></td>
-      </tr>
+        <tbody>
+          <tr>
+            <th scope="row"><%= group.id %></th>
+              <td><%=link_to group.name, group_accounts_path(current_user, group) %></td>
+            <% if group.icon.attached? %>
+              <td><%= image_tag(group.icon, style: "width: 200px") %></td>
+            <% end %>
+          </tr>
+        </tbody>
       <% end %>
     </table>
     <% else %>
     <h2>No category</h2>
   <% end %>
-  <button class="btn-link"><%= link_to "Add Category", new_group_path%></button>
+  <button class="btnLink"><%= link_to "Add Category", new_group_path%></button>
 </section>
