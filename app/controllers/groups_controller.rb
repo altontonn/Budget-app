@@ -1,6 +1,8 @@
 class GroupsController < ApplicationController
+  before_action :authenticate_user!
+  before_action :set_group, only: [:show]
   def index
-    @groups = Group.includes(:user).where(user_id: current_user.id).order('created_at DESC')
+    @groups = Group.all.order(created_at: :desc).includes(:accounts)
   end
 
   def new
@@ -19,5 +21,9 @@ class GroupsController < ApplicationController
 
   def group_params
     params.require(:group).permit(:name, :icon)
+  end
+
+  def set_group
+    @group = Group.find(params[:id])
   end
 end
