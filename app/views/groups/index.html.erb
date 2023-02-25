@@ -1,26 +1,32 @@
 <h1>Categories</h1>
 <section class="section-1">
   <% if @groups.count > 0 %>
+  <div class="table-responsive">
     <table class="table table-bordered">
       <thead class="table-light">
         <tr>
           <th scope="col">Id</th>
           <th scope="col">Name</th>
           <th scope="col" class="col-three">Icon</th>
+          <th scope="col">Amount Spent</th>
         </tr>
       </thead>
       <% @groups.each do |group| %>
-        <tbody>
-          <tr>
-            <th scope="row"><%= group.id %></th>
-              <td><%=link_to group.name, group_accounts_path(current_user, group) %></td>
-            <% if group.icon.attached? %>
+        <%= link_to group_accounts_path(current_user.id, group) do%>
+          <tbody>
+            <tr>
+              <th scope="row"><%= group.id %></th>
+              <td class="name"><%=link_to group.name, group_accounts_path(current_user, group) %></td>
+              <% if group.icon.attached? %>
               <td><%= image_tag(group.icon, style: "width: 200px") %></td>
-            <% end %>
-          </tr>
-        </tbody>
+              <% end %>
+              <td>Spent: $<b><%= group.accounts.sum(:amount) %></b></td>
+            </tr>
+          </tbody>
+        <% end %>
       <% end %>
     </table>
+  </div>
     <% else %>
     <h2>No category</h2>
   <% end %>

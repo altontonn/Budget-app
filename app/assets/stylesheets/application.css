@@ -34,6 +34,11 @@
   padding: 3px 6px;
 }
 
+.name a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .btnLink a {
   text-decoration: none;
   color: #fff;
@@ -42,4 +47,8 @@
 .btnLink a:hover {
   color: #fff;
   cursor: pointer;
+}
+
+.amount {
+  text-align: center;
 }
