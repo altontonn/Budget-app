@@ -1,7 +1,8 @@
 class Account < ApplicationRecord
   belongs_to :user
-  has_many :groups, foreign_key: :account_id
+  has_many :group_transactions, foreign_key: :account_id
+  has_many :groups, through: :group_transaction, foreign_key: :account_id
 
   validates :name, presence: true
-  validates :amount, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
+  validates :amount, numericality: { greater_than_or_equal_to: 0 }
 end

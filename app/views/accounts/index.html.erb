@@ -1,7 +1,9 @@
 <h1>Accounts</h1>
  <%= link_to '< Back', groups_path %>
 <section class="section-1">
+  <h2 class="amount">Total Amount: $<%= @accounts_sum %></h2>
   <% if @accounts.count > 0 %>
+  <div class="table-responsive">
     <table class="table table-bordered">
       <thead class="table-light">
         <tr>
@@ -15,13 +17,14 @@
         <tr>
           <th scope="row"><%= account.id %></th>
           <td><%= account.name%></td>
-          <td><%= account.amount%></td>
+          <td>$<%= account.amount%></td>
         </tr>
       </tbody>
       <% end %>
     </table>
+  </div>
     <% else %>
-    <h2>No ammount</h2>
+    <h2>No amount</h2>
   <% end %>
   <button class="btnLink"><%= link_to "Add Transaction", new_group_account_path %></button>
 </section>
