@@ -52,7 +52,7 @@
 
 ## 🔭 Project Presentation <a name="project-presentation"></a>
 
-- [Project-Presentation](https://drive.google.com/file/d/1NvXOqa5mrmL9rLuqUYyQ4OHNhJaJ5x7I/view?usp=share_link)
+- [Project-Presentation]()
 
 <!-- LIVE DEMO -->
 
