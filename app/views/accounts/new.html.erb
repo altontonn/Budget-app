@@ -1,5 +1,6 @@
-<section class="container">
+<%= render 'layouts/nav', title: 'Accounts'%>
+<section class="container section-1">
   <h1>New Transaction</h1>
-  <%= link_to '< Back', group_accounts_path %>
+  <%= link_to '< Back', group_accounts_path, class: "btn btn-primary"%>
   <%= render "form", account: @account %>
 </section>

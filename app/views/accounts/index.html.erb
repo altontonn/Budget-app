@@ -1,30 +1,22 @@
-<h1>Accounts</h1>
- <%= link_to '< Back', groups_path %>
+<%= render 'layouts/nav', title: 'Accounts'%>
 <section class="section-1">
+ <%= link_to '< Back', groups_path, class: "btn btn-primary" %>
   <h2 class="amount">Total Amount: $<%= @accounts_sum %></h2>
   <% if @accounts.count > 0 %>
-  <div class="table-responsive">
-    <table class="table table-bordered">
-      <thead class="table-light">
-        <tr>
-          <th scope="col">ID</th>
-          <th scope="col">Name</th>
-          <th scope="col">Amount</th>
-        </tr>
-      </thead>
-      <% @accounts.each do |account| %>
-      <tbody>
-        <tr>
-          <th scope="row"><%= account.id %></th>
-          <td><%= account.name%></td>
-          <td>$<%= account.amount%></td>
-        </tr>
-      </tbody>
-      <% end %>
-    </table>
+  <div class="container">
+    <% @accounts.each do |account| %>
+      <div class="row category">
+        <div class="col fs-5">
+          <p class="text-center"><%= account.name%></p>
+        </div>
+        <div class="col fs-5">
+          <p class="text-center">$<%= account.amount%></p>
+        </div>
+      </div>
+    <% end %>
   </div>
     <% else %>
     <h2>No amount</h2>
   <% end %>
-  <button class="btnLink"><%= link_to "Add Transaction", new_group_account_path %></button>
+  <button class="btnLink w-100 mt-4 py-1 fs-5"><%= link_to "Add Transaction", new_group_account_path %></button>
 </section>

@@ -9,10 +9,10 @@
           <%= image_tag(group.icon, style: "width: 200px", class: "img-fluid") %>
           <% end %>
         </div>
-        <div class="col d-flex align-items-center fs-3">
-          <a href="/groups/<%= group.id %>/accounts"><%= group.name %></a>
+        <div class="col d-flex align-items-center fs-5">
+          <a class="text-decoration-none" href="/groups/<%= group.id %>/accounts"><%= group.name %></a>
         </div>
-        <div class="col d-flex align-items-center fs-3">
+        <div class="col d-flex align-items-center fs-5">
           Spent: $<b><%= group.accounts.sum(:amount) %></b>
         </div>
       </div>
