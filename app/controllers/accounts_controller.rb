@@ -19,7 +19,7 @@ class AccountsController < ApplicationController
     @account.user_id = current_user.id
     if @account.save
       GroupTransaction.create!(group_id: @group.id, account_id: @account.id)
-      redirect_to group_accounts_path(@account), notice: 'Transaction created successfully'
+      redirect_to new_group_account_path(@account), notice: 'Transaction created successfully'
     else
       render :new, status: :unprocessable_entity
     end

@@ -21,7 +21,13 @@
 }
 
 .section-1 {
-  width: 70%;
+  width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  .section-1 {
+    width: 100%;
+  }
 }
 
 .col-three {
@@ -29,9 +35,9 @@
 }
 
 .btnLink {
-  background-color: #0d6efd;
+  background-color: #5fb523;
   border: none;
-  padding: 3px 6px;
+  border-radius: 5px;
 }
 
 .name a {
@@ -42,13 +48,37 @@
 .btnLink a {
   text-decoration: none;
   color: #fff;
+  border: 1px solid #fff;
+  width: 100%;
+  display: block;
+  padding: 5px;
 }
 
 .btnLink a:hover {
-  color: #fff;
   cursor: pointer;
+  color: #fff;
 }
 
 .amount {
   text-align: center;
+}
+
+.category:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.nav {
+  background-color: #3778c2;
+}
+
+.form {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 3rem;
+}
+
+.link {
+  text-align: center;
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1rem;
 }
