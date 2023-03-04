@@ -60,7 +60,7 @@
 
 > Add a link to your deployed project.
 
-- [coming shortly]()
+- [live-demo](https://budget-app-3ghh.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
