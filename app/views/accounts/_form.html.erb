@@ -1,0 +1,14 @@
+<%= form_for @account, url: group_accounts_path, html: { method: :post }  do |form| %>
+  <%= render "formErr/error_form_message", resource: account %>
+  <div class="form-group">
+    <%= form.label "Name", style: "display: block" %>
+    <%= form.text_field :name, required: true, class: "form-control"%>
+  </div>
+
+  <div class="form-group">
+    <%= form.label "Amount", style: "display: block" %>
+    <%= form.number_field :amount, required: true, class: "form-control" %>
+  </div>
+
+  <%= form.submit "Create Transaction", class: "btn btn-primary mt-4"%>
+<% end %>

@@ -1,24 +1,24 @@
 <%= render 'layouts/nav', title: 'Categories'%>
 <section class="section-1">
   <% if @groups.count > 0 %>
-  <div class="container">
-    <% @groups.each_with_index do |group, i| %>
-      <div class="row category">
-        <div class="col d-flex align-items-center">
-          <% if group.icon.attached? %>
-          <%= image_tag(group.icon, style: "width: 200px", class: "img-fluid") %>
-          <% end %>
+    <div class="container">
+      <% @groups.each_with_index do |group, i| %>
+        <div class="row category">
+          <div class="col d-flex align-items-center">
+            <% if group.icon.attached? %>
+              <%= image_tag(group.icon, style: "width: 200px", class: "img-fluid") %>
+            <% end %>
+          </div>
+          <div class="col d-flex align-items-center fs-5">
+            <a class="text-decoration-none" href="/groups/<%= group.id %>/accounts"><%= group.name %></a>
+          </div>
+          <div class="col d-flex align-items-center fs-5">
+            Spent: $<b><%= group.accounts.sum(:amount) %></b>
+          </div>
         </div>
-        <div class="col d-flex align-items-center fs-5">
-          <a class="text-decoration-none" href="/groups/<%= group.id %>/accounts"><%= group.name %></a>
-        </div>
-        <div class="col d-flex align-items-center fs-5">
-          Spent: $<b><%= group.accounts.sum(:amount) %></b>
-        </div>
-      </div>
-    <% end %>
-  </div>
-    <% else %>
+      <% end %>
+    </div>
+  <% else %>
     <h2>No category</h2>
   <% end %>
   <button class="btnLink w-100 py-1 fs-5"><%= link_to "Add Category", new_group_path%></button>
