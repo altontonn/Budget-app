@@ -25,13 +25,14 @@
 
 > Describe your project in 1 or 2 sentences.
 
-**[Budget-App]**  is a mobile web application where you can manage your budget and you can easily create an account and login to start managing your budget. A user can create groups to keep track of specific expenses and add transactions to those groups to stay on top of your spending. With this app, you can stay in top of list when coming up with financial plan.
+**[Budget-App]** is a mobile web application where you can manage your budget and you can easily create an account and login to start managing your budget. A user can create groups to keep track of specific expenses and add transactions to those groups to stay on top of your spending. With this app, you can stay in top of list when coming up with financial plan.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 > Describe the tech stack and include only the relevant sections that apply to your project.
+
 - Ruby on rails
 - PostgreSQL
 - Bootstrap
@@ -78,11 +79,9 @@ In order to run this project you need:
 
 - Ruby, rails and postgresql installed
 
-
 ### Setup
 
 Clone this repository to your desired folder:
-
 
 Example commands:
 
@@ -94,7 +93,6 @@ Example commands:
 ### Install
 
 Install this project with:
-
 
 ```sh
     bundle install
@@ -122,7 +120,6 @@ To run tests, run the following command:
 ```
 
 - For test
-
 
 ```sh
   rspec
@@ -180,6 +177,7 @@ Give a ⭐️ if you like this project and how I managed to build it!
 > Give credit to everyone who inspired your codebase.
 
 I would like to thank...
+
 - [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) for the design
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
