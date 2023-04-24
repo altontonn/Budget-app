@@ -1,5 +1,4 @@
 class AccountsController < ApplicationController
-  before_action :authenticate_user!
   before_action :set_group, only: %i[index create new]
   def index
     # @group = Group.find(params[:group_id])
@@ -19,7 +18,8 @@ class AccountsController < ApplicationController
     @account.user_id = current_user.id
     if @account.save
       GroupTransaction.create!(group_id: @group.id, account_id: @account.id)
-      redirect_to new_group_account_path(@account), notice: 'Transaction created successfully'
+      flash[:notice] = 'Transaction created successfully'
+      redirect_to group_accounts_path
     else
       render :new, status: :unprocessable_entity
     end

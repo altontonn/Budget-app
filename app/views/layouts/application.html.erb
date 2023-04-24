@@ -15,6 +15,9 @@
     <main class="app">
       <p class="notice text-success mt-1 fw-bolder"><%= notice %></p>
       <p class="alert text-danger fw-bolder"><%= alert %></p>
+      <div class="notice">
+        <p class="text-success"><%= flash[:notice] %></p>
+      </div>
       <%= yield %>
     </main>
   </body>

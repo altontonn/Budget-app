@@ -10,7 +10,7 @@
             <% end %>
           </div>
           <div class="col d-flex align-items-center fs-5">
-            <a class="text-decoration-none" href="/groups/<%= group.id %>/accounts"><%= group.name %></a>
+            <a class="text-decoration-none" href="/groups/<%= group.id %>/accounts"><%=group.name %></a>
           </div>
           <div class="col d-flex align-items-center fs-5">
             Spent: $<b><%= group.accounts.sum(:amount) %></b>
