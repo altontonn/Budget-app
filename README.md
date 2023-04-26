@@ -23,15 +23,11 @@
 
 # 📖 [Budget-App] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
 **[Budget-App]** is a mobile web application where you can manage your budget and you can easily create an account and login to start managing your budget. A user can create groups to keep track of specific expenses and add transactions to those groups to stay on top of your spending. With this app, you can stay in top of list when coming up with financial plan.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 - Ruby on rails
 - PostgreSQL
@@ -40,8 +36,6 @@
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
 
 - **[Account Creation]** - a user can create and sign in to his/her account to access their budget accounts
 - **[Category Creation]** - a user can create category to organize their accounts and transactions, making it easy to track specific areas of their budget.
@@ -59,8 +53,6 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
 - [live-demo](https://budget-w99n.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -68,8 +60,6 @@
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -97,7 +87,6 @@ Install this project with:
 ```sh
     bundle install
 ```
-
 ### Usage
 
 To run the project, execute the following command:
@@ -108,7 +97,6 @@ To run the project, execute the following command:
 ```sh
     rails s OR rails server
 ```
-
 ### Run tests
 
 To run tests, run the following command:
@@ -143,8 +131,6 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
 - **Set up a edit and delete button**
 - **Add basic UI**
 
@@ -164,8 +150,6 @@ Feel free to check the [issues page](https://github.com/altontonn/Budget-app/iss
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 Give a ⭐️ if you like this project and how I managed to build it!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -173,8 +157,6 @@ Give a ⭐️ if you like this project and how I managed to build it!
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank...
 
