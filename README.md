@@ -53,7 +53,7 @@
 
 ## 🔭 Project Presentation <a name="project-presentation"></a>
 
-- [Project-Presentation](https://drive.google.com/file/d/1YDtWgdNAno6lzV1GpqyYqJuXA9BEfwix/view?usp=share_link)
+- [Project-Presentation](https://drive.google.com/file/d/1i7nos1pG1uWvay_UNFgs2z2bBR-0FmXh/view?usp=share_link)
 
 <!-- LIVE DEMO -->
 
@@ -186,8 +186,6 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](https://github.com/altontonn/Budget-app/blob/dev/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

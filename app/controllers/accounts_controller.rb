@@ -10,19 +10,16 @@ class AccountsController < ApplicationController
 
   def new
     @account = Account.new
-    @groups = Group.all
+    @groups = current_user.groups.all
   end
 
   def create
-    @account = Account.new(account_params)
-    @account.user_id = current_user.id
-    if @account.save
-      GroupTransaction.create!(group_id: @group.id, account_id: @account.id)
-      flash[:notice] = 'Transaction created successfully'
-      redirect_to group_accounts_path
-    else
-      render :new, status: :unprocessable_entity
-    end
+    account = Account.create(name: account_params[:name], user_id: current_user.id, amount: account_params[:amount])
+    return unless account.save
+
+    GroupTransaction.create(account_id: account.id, group_id: params[:group])
+    flash[:notice] = 'Transaction created successfully'
+    redirect_to group_accounts_path
   end
 
   def account_params
