@@ -47,7 +47,7 @@
 
 ## 🔭 Project Presentation <a name="project-presentation"></a>
 
-- [Project-Presentation](https://drive.google.com/file/d/1i7nos1pG1uWvay_UNFgs2z2bBR-0FmXh/view?usp=share_link)
+- []()
 
 <!-- LIVE DEMO -->
 
