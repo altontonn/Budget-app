@@ -4,7 +4,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-    - [🔭 Project Presentation](#project-presentation)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -42,12 +41,6 @@
 - **[Budget Tracking]** - With this, a user can stay within their budget
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- PROJECT PRESENTATION-->
-
-## 🔭 Project Presentation <a name="project-presentation"></a>
-
-- []()
 
 <!-- LIVE DEMO -->
 
